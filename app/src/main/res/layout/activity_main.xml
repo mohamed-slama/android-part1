@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Contraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/todo"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/ligne1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
+
+    <TextView
+        android:id="@+id/Gender"
+        android:layout_width="143dp"
+        android:layout_height="30dp"
+        android:text="Gender"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <RadioButton
+        android:id="@+id/Femme"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:checked="false"
+        android:orientation="horizontal"
+        android:text="Femme"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:buttonTint="#ff1744"
+        android:checked="true"
+        android:orientation="horizontal"
+        android:text="Homme "
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38" />
+
+    <LinearLayout
+        android:id="@+id/ligne2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <TextView
+        android:id="@+id/skills"
+        android:layout_width="143dp"
+        android:layout_height="30dp"
+        android:text="Skills"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.467" />
+
+    <SeekBar
+        android:id="@+id/simpleSeekBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progressTint="#E91E63"
+        android:thumbTint="#ff1744"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ANDROID"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571" />
+
+    <SeekBar
+        android:id="@+id/simpleSeekBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:max="100"
+        android:progressTint="#E91E63"
+        android:thumbTint="#ff1744"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skills"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IOS"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <SeekBar
+        android:id="@+id/simpleSeekBar2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:max="100"
+        android:progressTint="#E91E63"
+        android:thumbTint="#ff1744"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FLUTTER"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734" />
+
+    <LinearLayout
+        android:id="@+id/ligne3"
+        android:layout_width="410dp"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.779">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Reset"
+        android:layout_width="112dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#000000"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Next"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="109dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#000000"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameContainer"
+        android:layout_width="201dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="3dp"
+        android:background="@android:color/transparent"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="#E91E63"
+        app:endIconTint="#E91E63"
+        app:hintTextColor="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/ageContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconTint="#E91E63">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditText"
+            android:layout_width="200dp"
+            android:layout_height="47dp"
+            android:hint="FullName"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ageContainer"
+        android:layout_width="201dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="3dp"
+
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="90dp"
+        android:background="@android:color/transparent"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="#E91E63"
+        app:endIconTint="@color/colorSecondary"
+        app:hintTextColor="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/ligne1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/nameContainer"
+        app:startIconTint="#E91E63">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ageEditText"
+            android:layout_width="200dp"
+            android:layout_height="47dp"
+            android:hint="Age"
+            android:inputType="number"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emailContainer"
+        android:layout_width="201dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="53dp"
+        android:background="@android:color/transparent"
+        app:boxBackgroundColor="@android:color/transparent"
+        app:boxStrokeColor="#E91E63"
+        app:endIconTint="#E91E63"
+        app:hintTextColor="#E91E63"
+        app:layout_constraintBottom_toTopOf="@+id/ligne1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/ageContainer"
+        app:startIconTint="#E91E63">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Email "
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
